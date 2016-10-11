@@ -2,15 +2,10 @@
 Description: Code to house all of the necessary constants affected by the code
 */
 
-#include "macros.h"
-#include "disp_driver.h"
-
-#include "cat.h"
-
 //speed display constants for cursor locations
-#define SPEED_DISPLAY_DIGIT_X
-#define SPEED_DISPLAY_DIGIT_SPACING
-#define SPEED_DISPLAY_DIGIT_Y
+#define SPEED_DISPLAY_DIGIT_X 4
+#define SPEED_DISPLAY_DIGIT_SPACING 5
+#define SPEED_DISPLAY_DIGIT_Y  60
 
 //RPM display constants for cursor locations
 #define RPM_DISPLAY_DIGIT_X
@@ -42,11 +37,3 @@ Description: Code to house all of the necessary constants affected by the code
 //Improper Torque warning (too much or too little) display constants for cursor locations
 #define TORQUE_DISPLAY_X
 #define TORQUE_DISPLAY_Y
-
-//All numbers displayed's width and height on screen
-#define NUMBER_DISPLAY_IMG_WIDTH
-#define NUMBER_DISPLAY_iMG_HEIGHT
-
-void main()
-{
-}

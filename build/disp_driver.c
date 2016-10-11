@@ -90,7 +90,7 @@ void disp_clear_text()
 	}
 }
 
-void disp_write_text(int line, int position, int length, char* text)
+void disp_write_text(int line, int position, int length, const char* text)
 {
     disp_command(DC_CURSOR_RIGHT);
 	disp_command(DC_CURSOR_SET);
@@ -116,7 +116,7 @@ void disp_clear_graphics()
 	}
 }
 
-void disp_write_graphics(int x, int y, int width, int height, uint8_t* data)
+void disp_write_graphics(int x, int y, int width, int height, const uint8_t* data)
 {
 	disp_command(DC_CURSOR_RIGHT);
 	for(int i = 0; i < height; i++)
